@@ -1,9 +1,25 @@
 @import "tailwindcss";
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+ 
 
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
+}
+.slick-prev, .slick-next {
+  color: white !important;
+  font-size: 24px !important;
+  z-index: 10;
+}
+.slick-prev {
+  left: -40px;
+}
+.slick-next {
+  right: -40px;
+}
+.slick-dots li button:before {
+  color: white !important;
+}
+/* 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -71,4 +87,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
