@@ -37,7 +37,7 @@ const Header = () => {
           {isOpen ? <FiX /> : <FiMenu className=' ' />}
         </button>
         {/* Contact Button */}
-        <button className="bg-[#44c4a4] hidden md:block text-black px-6 py-2 rounded-sm border border-white">
+        <button className="bg-[#32e2bc] hidden md:block text-black px-6 py-2 rounded-sm border border-white">
           Contact
         </button>
 

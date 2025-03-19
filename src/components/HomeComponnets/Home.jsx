@@ -90,7 +90,7 @@ const Home = () => {
               lasting, profitable impact for your business.
             </p>
             <div className="border-t border-white w-40 sm:w-40 h-2 mx-auto sm:mx-2 my-6"></div>
-            <button className="bg-[#5de0c0] hover:bg-black text-black hover:border-white hover:border-2 hover:text-white font-semibold px-10 py-3 rounded-sm transition duration-300">
+            <button className="bg-[#32e2bc] hover:bg-black text-black hover:border-white hover:border-2 hover:text-white font-semibold px-10 py-3 rounded-sm transition duration-300">
               BOOK A CALL
             </button>
           </div>
@@ -196,7 +196,7 @@ const Home = () => {
             <div className="mt-6 flex justify-center md:justify-start">
               <a
                 href="#"
-                className="bg-[#5de0c0] text-blue-950 font-semibold py-3 px-12  hover:bg-green-600 transition duration-300"
+                className="bg-[#32e2bc] text-blue-950 font-semibold py-3 px-12  hover:bg-green-600 transition duration-300"
               >
                 BOOK A CALL
               </a>
