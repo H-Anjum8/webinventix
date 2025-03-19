@@ -214,7 +214,7 @@ const Home = () => {
         </div>
       </section>
       {/* ===============Growth section ======== */}
-      <section className=" container mx-auto text-white text-center py-10 px-6 ">
+      <section className=" container mx-auto text-white text-center py-10  ">
         <div className="max-w-md bg-black  py-20 sm:max-w-full xl:max-w-6xl mx-auto space-y-2 flex flex-col px-8 items-center justify-center">
           <p className="text-green-400 font-semibold uppercase tracking-wide text-sm">
             What We Do
