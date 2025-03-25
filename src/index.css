@@ -1,9 +1,13 @@
 @import "tailwindcss";
 body {
   margin: 0;
-  background-color: #f4f4f4;
+
  
 
+}
+
+h2 {
+  font-family: 'Cabinet Grotesk', sans-serif;
 }
 .slick-prev, .slick-next {
   color: white !important;
@@ -19,6 +23,14 @@ body {
 .slick-dots li button:before {
   color: white !important;
 }
+
+
+
+
+
+
+
+
 /* 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

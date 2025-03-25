@@ -12,13 +12,13 @@ const Footer = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className="sm:grid sm:grid-cols-2 text-md gap-6 space-y-6 ">
-        <div className="font-semibold ">
+      <div className="sm:grid sm:grid-cols-2 text-md gap-6  ">
+        <div className="font-semibold space-y-6 ">
           <p >Services</p>
           <p>Industries</p>
           <p>Solutions</p>
         </div>
-        <div className="font-semibold ">
+        <div className="font-semibold space-y-6  ">
           <p >Blog</p>
           <p>Case Studies</p>
           <p>Contact Us</p>
