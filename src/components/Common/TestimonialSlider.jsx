@@ -83,7 +83,7 @@ const TestimonialSlider = () => {
                   className="relative md:max-w-[400px] lg:max-w-3xl px-14 py-10  bg-black border-1 sm:h-[500px] md:h-[400px] lg:h-[500px]  border-white rounded-lg shadow-lg"
                 >
                   {/* Left Gradient Border */}
-                  <div className="absolute xl:hidden top-0 left-0 h-full w-1 bg-gradient-to-b to-black from-white"></div>
+                  {/* <div className="absolute xl:hidden top-0 left-0 h-full w-1 bg-gradient-to-b to-black from-white"></div> */}
 
                   {/* Content */}
                   <div className="flex flex-col items-start   lg:gap-4 mb-4">
@@ -97,7 +97,7 @@ const TestimonialSlider = () => {
                   </div>
 
                   {/* Bottom Gradient Border */}
-                  <div className=" hidden  sm:flex absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-black to-white"></div>
+                  {/* <div className=" hidden  sm:flex absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-black to-white"></div> */}
                 </div>
               ))}
             </Slider>

@@ -5,7 +5,7 @@ const SocialShare = () => {
   const shareUrl = window.location.href;
 
   return (
-    <div className="flex gap-4 mt-6">
+    <div className="flex flex-wrap gap-4 mt-6">
       {/* Facebook */}
       <a
         href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}

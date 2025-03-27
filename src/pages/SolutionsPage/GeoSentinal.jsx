@@ -42,13 +42,13 @@ const GeoSentinal = () => {
       {
         feature_id: "01",
         title: "IThe Internet of Things (IoT) Empowering Enterprise Transformation",
-        link: "#",
+        link: "/blog/view/11",
 
       },
       {
         feature_id: "02",
         title: "The Future of Infrastructure and Operations: 6 Strategic Trends for 2025 Enterprise Success",
-        link: "#",
+        link: "/blog/view/12",
 
       },
     ],

@@ -20,9 +20,12 @@ const Header = () => {
       <nav className=" text-white container mx-auto bg-black  px-2 py-4">
         <div className="w-full mx-auto  xl:px-10 2xl:px-30 flex justify-between items-center">
           {/* Logo */}
-          <div className=" text-2xl font-bold flex items-center">
-            <img src={Logo} alt='logo' className='w-50 md:w-30 lg:w-40' />
-          </div>
+           <Link to="/"  onClick={() => window.scrollTo(0, 0)}  className=" text-2xl font-bold flex items-center">
+           <img src={Logo} alt='logo' className='w-50 md:w-30 lg:w-40' />
+           </Link>
+          
+           
+         
 
           {/* Navigation Links */}
           <ul className="hidden xl:flex space-x-6  text-white">

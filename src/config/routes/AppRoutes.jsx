@@ -28,6 +28,7 @@ import FleetSync from '../../pages/SolutionsPage/FleetSync'
 import GeoSentinal from '../../pages/SolutionsPage/GeoSentinal'
 import VisionTrack from '../../pages/SolutionsPage/VisionTrack'
 import BlogDetail from '../../pages/Blog/BlogDetail'
+import TagsComponent from '../../components/Blogs/TagsComponent'
 
 const AppRoutes = () => {
   return (
@@ -41,6 +42,9 @@ const AppRoutes = () => {
       <Route path="/casestudies/View/:id" element={<SingleBlog/>} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/View/:id" element={<BlogDetail/>} />
+      <Route path="/blog/tagview" element={<TagsComponent/>} />
+
+      
 
             {/* Service Sub-Pages */}
       <Route path="/services/Artificial-Intelligence" element={<Artificial_Intelligence/>} />

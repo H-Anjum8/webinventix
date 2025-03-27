@@ -42,13 +42,13 @@ const BioSentinal = () => {
         {
           feature_id: "01",
           title: "Implementing Advanced Proctoring Technology at a High-Volume Student Testing Center",
-          link: "#",
+          link: "/casestudies/View/1",
           
         },
         {
           feature_id: "02",
           title: "AI and Clinician Burnout: What’s Actually Working, What’s Still a Mess",
-          link: "#",
+          link: "/blog/view/7",
        
         },
       ],}

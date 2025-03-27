@@ -1,24 +1,19 @@
-import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import { useLocation } from 'react-router-dom';
-import ServiceHeader from './ServiceHeader';
-
+import React, { useState } from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import PopupForm from '../components/Common/PopupForm';
 
 const MainLayout = ({ children }) => {
-  // const location = useLocation();
-  return (
-    
-   <div  >
-    <Header />
-    
-{/* Service Header (Only on Service Page & Its Sub-Pages) */}
-{/* {location.pathname.startsWith("/services") && <ServiceHeader />} */}
-    <main>{children}</main>
-    <Footer />
-   </div>
-    
-  )
-}
+  const [hideHeaderFooter, setHideHeaderFooter] = useState(false);
 
-export default MainLayout
+  return (
+    <div>
+      {!hideHeaderFooter && <Header />}
+      <main>{children}</main>
+      {!hideHeaderFooter && <Footer />}
+      <PopupForm onPdfOpen={() => setHideHeaderFooter(true)} onPdfClose={() => setHideHeaderFooter(false)} />
+    </div>
+  );
+};
+
+export default MainLayout;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import headerImg from '../../assets/images/HeadrImg.jpg'
 import FeatureCard from './FeatureCard';
 import img1 from '../../assets/images/FeatureImage1.png'
@@ -18,7 +18,15 @@ import { Link } from 'react-router-dom';
 
 
 
+
+
 const Home = () => {
+  const handleClick = () => {
+    // Open in same tab as fallback
+    window.location.href = 'https://calendly.com/webinventix-ai';
+  };
+
+
   const features = [
     {
       image: img1,
@@ -43,6 +51,7 @@ const Home = () => {
     },
   ];
 
+
   const aiFeatures = [
     {
       image: AiImg1,
@@ -50,16 +59,16 @@ const Home = () => {
       subtitle: "Cut Waste. Speed Decisions",
       description:
         "AI isn’t about dashboards—it’s about execution. We build automation systems that think in real time, so you can. Predictive models, next-best actions, and workstreams get baked into your workflows. No more guessing. No more delay.",
-      path :'/services/Enterprise-AI-Automation'
-      },
+      path: '/services/Enterprise-AI-Automation'
+    },
     {
       image: AiImg2,
       title: "Machine Learning",
       subtitle: "Real-Time Intelligence",
       description:
         "We deploy machine learning pipelines where they actually matter—in production, at scale, with complex automation. It’s just math and algorithms that don’t break under pressure. Data flows. It’s insights live. Go, get smarter.",
-      path :'/services/Machine-Learning'
-      },
+      path: '/services/Machine-Learning'
+    },
     {
       image: AiImg3,
       title: "Computer Vision",
@@ -69,7 +78,7 @@ const Home = () => {
       heading3: ' What You’ll Learn Inside:',
 
       endline: ' Get your free copy now and start transforming your operations from the inside out.',
-      path :'/services/Computer-Vision'
+      path: '/services/Computer-Vision'
 
     },
   ];
@@ -88,8 +97,9 @@ const Home = () => {
     ],
     callToAction:
       "Get your free copy now and start transforming your operations from the inside out.",
-  image:Team,
-    }];
+    image: Team,
+  }];
+
   return (
     <>
       {/* ===============Hero section ======== */}
@@ -117,9 +127,21 @@ const Home = () => {
               At our core, we are your trusted partner in AI innovation. Our singular mission is to create intelligent solutions that deliver lasting, profitable impact for your business.
             </p>
             <div className="border-t border-white w-40 h-2 mx-auto sm:mx-2 my-6"></div>
-            <Link to='/' className="px-6 py-3 cursor-pointer bg-gradient-to-r from-[#32e2bc] to-[#94e8d3] text-black font-semibold rounded-md shadow-lg hover:shadow-xl transition-all duration-300">
+            {/* <Link to='/' className="px-6 py-3 cursor-pointer bg-gradient-to-r from-[#32e2bc] to-[#94e8d3] text-black font-semibold rounded-md shadow-lg hover:shadow-xl transition-all duration-300">
               BOOK A CALL
-            </Link>
+            </Link> */}
+            {/* <button onClick={() => window.open("https://calendly.com/your-link", "_blank")} className="px-6 py-3 cursor-pointer bg-gradient-to-r from-[#32e2bc] to-[#94e8d3] text-black font-semibold rounded-md shadow-lg hover:shadow-xl transition-all duration-300">
+              BOOK A CALL
+            </button> */}
+
+            <button
+              onClick={handleClick}
+              className="px-6 py-3 bg-gradient-to-r from-[#32e2bc] to-[#94e8d3] text-black font-semibold rounded-md shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              BOOK A CALL
+            </button>
+
+
           </div>
         </div>
 
@@ -151,7 +173,7 @@ const Home = () => {
               We build AI that works in the real world.
             </p>
             <div className='flex justify-center'>
-              <Link to='/about'  className=" cursor-pointer px-8 py-3 bg-gradient-to-r from-[#32e2bc] rounded-sm to-[#94e8d3] text-black font-semibold  shadow-lg hover:shadow-xl transition-all duration-300  ">
+              <Link to='/about' className=" cursor-pointer px-8 py-3 bg-gradient-to-r from-[#32e2bc] rounded-sm to-[#94e8d3] text-black font-semibold  shadow-lg hover:shadow-xl transition-all duration-300  ">
                 LEARN MORE
               </Link>
             </div>
@@ -238,11 +260,11 @@ const Home = () => {
                 </h3>
                 <p className=" text-lg mt-2 mb-8">{feature.description}</p>
                 <div className="flex justify-center items-center">
-                <Link to={feature.path} 
-                onClick={() => window.scrollTo(0, 0)}
-                className="px-6   md:absolute md:bottom-14  py-3 cursor-pointer bg-gradient-to-r from-[#32e2bc] to-[#94e8d3] text-black font-semibold rounded-md shadow-lg hover:shadow-xl transition-all duration-300">
-                  LEARN MORE
-                </Link>
+                  <Link to={feature.path}
+                    onClick={() => window.scrollTo(0, 0)}
+                    className="px-6   md:absolute md:bottom-14  py-3 cursor-pointer bg-gradient-to-r from-[#32e2bc] to-[#94e8d3] text-black font-semibold rounded-md shadow-lg hover:shadow-xl transition-all duration-300">
+                    LEARN MORE
+                  </Link>
                 </div>
               </div>
             ))}
@@ -276,3 +298,13 @@ const Home = () => {
 }
 
 export default Home
+
+
+
+
+
+
+
+
+
+

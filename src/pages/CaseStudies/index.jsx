@@ -57,7 +57,7 @@ const CaseStudies = () => {
 
 
 
-    <section className="container mx-auto py-16 px-4 bg-white text-center">
+    <section className="container mx-auto py-16 px-4  text-center">
        <h2 className=" text-3xl sm:text-5xl font-bold mb-4">Case Studies</h2>
      <p className="text-lg text-gray-600   text-center">
        Interested in learning more about the type of work we do?    
@@ -65,7 +65,7 @@ const CaseStudies = () => {
      <p className="text-lg text-gray-600  mb-8 text-center">
       Check out some of our case studies.</p>
 
-      <div className="grid md:grid-cols-3 gap-6 px-4  lg:px-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4  lg:px-20">
         {blogs.map((blog) => (
           
          <CaseStudyCard

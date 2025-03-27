@@ -60,7 +60,7 @@ const ServicesComponent = () => {
             description:
                 `At Web Inventix AI, we create intelligent ecosystems to enhance efficiency, boost decision making, and transform daily operations through IoT (internet of Things) and smart automation.\n\nFrom healthcare convenience to enhanced security and optimized business productivity, compete like never before with IoT and smart automation. These automated solutions offer you increased efficiency, cost-effectiveness, enhanced customer experience, scalability, and real-time insights to keep you ahead of competitors.`,
             isImageRight: true,
-            btnPath: '',
+            btnPath: '/blog/view/11',
         },
         {
             image: img6,
